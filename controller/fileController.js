@@ -12,8 +12,21 @@ const userController={  //控制层处理请求的方法
             response.render("goodxx", data);
         });
     },
+    test2(requset,response){
+        response.send({
+            data: '使用public方法调用'
+        });
+    },
+    test3(requset,response){
+        response.send({
+            data: '删除成功'
+        });
+    },
     postUser(request,response){
-        response.send("返回路由层的数据");
+        console.log('ye im in')
+        response.send({
+            data: '直接调用全局ajax方法'
+        });
 
         // 1.创建一个连接对象
         // const db = mysql.createConnection({
