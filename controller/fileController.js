@@ -14,7 +14,14 @@ const userController={  //控制层处理请求的方法
     },
     test2(requset,response){
         response.send({
-            data: '使用public方法调用'
+            // data: '使用public方法调用'
+            data: [
+                {id: '001', name: '老王', address: '隔壁'},
+                {id: '002', name: '老李', address: '隔壁'},
+                {id: '003', name: '老大', address: '隔壁'},
+                {id: '004', name: '老二', address: '隔壁'},
+                {id: '005', name: '老三', address: '隔壁'}
+            ]
         });
     },
     test3(requset,response){
